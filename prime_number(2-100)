@@ -1,0 +1,20 @@
+import math
+#定义素数的判别函数
+def isprime(x):
+    if x==2:
+        return True
+    elif x>2:
+        k=int(math.sqrt(x))
+        for i in range(2,k+1):
+            if x%i==0:
+                return False
+                break
+        else:
+            return True
+
+#输出2到100之间的素数
+Alist = []
+for j in range(2,101):
+    if isprime(j) :
+       Alist.append(j)
+print Alist     
