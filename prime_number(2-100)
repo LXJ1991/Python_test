@@ -1,3 +1,4 @@
+#Python 2.7
 import math
 #定义素数的判别函数
 def isprime(x):
